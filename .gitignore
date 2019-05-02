@@ -1,0 +1,7 @@
+node_modules
+lib
+*.env
+test*
+advanced.js
+hobbs.csv
+final*

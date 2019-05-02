@@ -1,0 +1,47 @@
+{
+    "name": "AIC",
+    "version": "1.0.0",
+    "description": "AIC-v1",
+    "author": "Generated using Microsoft Bot Builder Yeoman generator v4.2.4",
+    "license": "MIT",
+    "main": "index.js",
+    "scripts": {
+        "lint": "./node_modules/.bin/eslint .",
+        "start": "node ./index.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "nodemon ./index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com"
+    },
+    "dependencies": {
+        "async": "^2.6.2",
+        "botbuilder": "^4.3.2",
+        "botbuilder-dialogs": "^4.3.2",
+        "botframework-config": "^4.3.2",
+        "convert-csv-to-json": "0.0.13",
+        "csv-parser": "^2.2.0",
+        "dotenv": "^6.1.0",
+        "get-urls": "^9.0.0",
+        "path": "^0.12.7",
+        "pg": "^7.8.2",
+        "pg-connection-string": "^2.0.0",
+        "readline-sync": "^1.4.9",
+        "request": "^2.88.0",
+        "requests": "^0.2.2",
+        "restify": "^7.2.3",
+        "tern": "^0.23.0",
+        "xml-js": "^1.6.11",
+        "yargs": "^13.2.2"
+    },
+    "devDependencies": {
+        "eslint": "^5.16.0",
+        "eslint-config-standard": "^12.0.0",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-node": "^8.0.0",
+        "eslint-plugin-promise": "^4.0.1",
+        "eslint-plugin-standard": "^4.0.0",
+        "nodemon": "^1.18.10"
+    }
+}
