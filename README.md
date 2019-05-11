@@ -119,10 +119,8 @@ Hobbs consists mainly of `excelparse.js`, `index.js`, `parse.js` and `bot.js`. H
 
 **Continue Dialog**
 - `CONTINUE_DIALOG` allows users to continue at where they left off based on data the bot got from the database.
-- `this.conversationData.answerForms[1]` contains the position that users chose locally. (users can use `post` to send their answers to the database)
-- `answerForms[1]` contains the position that users are hiring for according to the database. 
-- We reset all the `null` value in the given `answerFroms` array to `undefined` since it is easier to handle errors.
-- Notice, we initialize a Boolean variable called `isSamePosition`. The purpose of this variable is to determine whether users choose the same position as what we have in the database. If not, clear out all the previous stored data in the database, post what is in the `this.conversation.answerForms`  to the database for that specific user and bring users back to `Start from the beginning`
+- This dialog is under contruction due to authentication issues.
+
 
  **Jump Dialog**
 - `JUMP_DIALOG` is initialized in `STARTING_DIALOG`/ `onTurn`  if user invokes it. It allows the user to jump to a section.
@@ -141,12 +139,6 @@ Hobbs consists mainly of `excelparse.js`, `index.js`, `parse.js` and `bot.js`. H
 **Feedback**
 * Feedback acts as a global interruption. When invoked, whatever dialog is in process gets "paused" and the feedback process is executed. Once finished, it again performs the last activity that the bot was doing before we invoked /feedback (for e.g. Resume the question/text again that is paused before typing `/feedback`.) 
 
-<<<<<<< HEAD
-**Post**
-- Users can use `post` to send their answers to the database.
-
-=======
->>>>>>> 421c4b05167e771d56a97b606c25ac852a588f43
 # To run the bot
 - Install modules
 ```bash
@@ -179,11 +171,8 @@ node index.js
 
 **Note**: 
 - After you save and connect the bot, you could find your bot under `My Bot` 
-<<<<<<< HEAD
 - To run the bot requires an `.env` file which contains Microsoft App ID and Microsoft App password. 
-=======
-- To run the bot requires an .env file which contains Microsoft App ID and Microsoft App password.
->>>>>>> 421c4b05167e771d56a97b606c25ac852a588f43
+- Please checkout `Starting-from-the-beginning.mp4` and `Jump.mp4` since Miscrosoft App ID and password will not be provided due to security issues.
   
 # Deploy the bot to Azure
 
@@ -279,9 +268,4 @@ To learn more about deploying a bot to Azure, see [Deploy your bot to Azure][40]
 
 [52]: https://www.python.org/downloads/release/python-373/
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 421c4b05167e771d56a97b606c25ac852a588f43
 
